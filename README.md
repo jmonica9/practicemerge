@@ -151,11 +151,7 @@ const Register = (props) => {
             onClick={handleSubmit}
           />
           <br />
-          <Button variant="link" onClick={toggleNewOrReturningAuth}>
-            {isNewUser
-              ? "Already have an account? Sign in"
-              : "If you are a new user, click here to create account"}
-          </Button>
+      
         </Box>
         <Button onClick={() => logout()}>Go back</Button>
       </Typography>
