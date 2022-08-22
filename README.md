@@ -107,16 +107,18 @@ event.preventDefault();
         auth,
         props.emailInputValue,
 
-    ABCJAKLSFJDKALDFJLAKDJVLIWEVJWLKDVMCLK
-    KLAJFLKANDLKFNVLKASD
-
-    AKJFLADLKFVNLK
-
-
-    AKSJFLKAJFLKEWIRIPEMFVKDE
-
-
-
+let navigate = useNavigate();
+const [currPokemon, setCurrPokemon] = useState(0);
+const handleChoosePokemonClick = (e) => {
+setCurrPokemon(e.target.name);
+console.log(e.target.name, "e.target.name name of pokemon");
+// console.log(pokemon,",data of pokemon")
+console.log("navigate to select pokemon");
+setNextPage(true);
+navigate("selectpokemon").catch((error) => {
+console.log(error);
+});
+};
 
     Button>
       </Typography>
